@@ -6,3 +6,4 @@ accounts.local.json
 .env
 .env.*
 coverage/
+.playwright-mcp/
