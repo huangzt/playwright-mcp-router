@@ -1,0 +1,24 @@
+{
+  "defaultAccount": "1",
+  "idleTimeoutMs": 900000,
+  "maxSessions": 12,
+  "playwrightArgs": [
+    "--extension",
+    "--background",
+    "--caps=devtools"
+  ],
+  "accounts": {
+    "1": {
+      "label": "Work Account (Chrome Default)",
+      "profileDirName": "Default",
+      "token": "${PLAYWRIGHT_TOKEN_1}",
+      "colors": ["blue", "cyan", "purple"]
+    },
+    "2": {
+      "label": "Secondary Account (Chrome Profile 1)",
+      "profileDirName": "Profile 1",
+      "token": "${PLAYWRIGHT_TOKEN_2}",
+      "colors": ["green", "orange", "yellow"]
+    }
+  }
+}

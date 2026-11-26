@@ -1,0 +1,49 @@
+{
+  "name": "playwright-mcp-router",
+  "version": "0.1.0",
+  "description": "Session-isolated multi-account MCP router for @playwright/mcp — enables concurrent AI agents to share Chrome logins without hijacking each other's active tab, with meaningful per-task Chrome tab group names.",
+  "type": "module",
+  "license": "MIT",
+  "author": "huangzt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangzt/playwright-mcp-router.git"
+  },
+  "homepage": "https://github.com/huangzt/playwright-mcp-router#readme",
+  "bugs": {
+    "url": "https://github.com/huangzt/playwright-mcp-router/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "playwright",
+    "playwright-mcp",
+    "chrome",
+    "browser-automation",
+    "multi-agent",
+    "ai-agents",
+    "session-isolation"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "playwright-mcp-router": "./bin/playwright-mcp-router.js"
+  },
+  "exports": {
+    ".": "./src/router.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "accounts.example.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/playwright-mcp-router.js",
+    "test": "node --test test/router.test.js",
+    "test:live": "node test/live-concurrency.mjs"
+  }
+}
